@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   MagePsycho
+ * @package    MagePsycho_Easypathhints
+ * @author     info@magepsycho.com
+ * @website    http://www.magepsycho.com
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+    <modules>
+        <TargetedVictory_Customizer>
+            <version>1.0.0</version>
+        </TargetedVictory_Customizer>
+    </modules>
+    <global>
+      <blocks>
+            <customizer>
+                <class>TargetedVictory_Customizer_Block</class>
+            </customizer>
+      </blocks>
+      <model>
+            <customizer>
+                <class>TargetedVictory_Customizer_Model</class>
+            </customizer>
+      </model>
+    </global>
+    <frontend>
+		<routers>
+	        <customizer>
+	            <use>standard</use>
+	            <args>
+	                <module>TargetedVictory_Customizer</module>
+	                <frontName>customizer</frontName>
+	            </args>
+	        </customizer>
+	    </routers>
+	</frontend>
+	<default>
+        <customizer>
+            <general>
+                <enable>1</enable> 
+            <update_blocks>a:2:{s:2:"id";a:3:{i:0;s:17:".block.block-cart";i:1;s:14:".header .links";i:2;s:26:".checkout-cart-index .cart";}s:3:"xml";a:3:{i:0;s:12:"cart_sidebar";i:1;s:9:"top.links";i:2;s:13:"checkout.cart";}}</update_blocks>
+            </general>
+        </customizer>
+    </default>
+</config>
